@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center_vertical"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+    <ImageView
+        android:id="@+id/slide"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:orientation="vertical">
+	    
+	    <ImageButton
+	        android:id="@+id/btnquantriadmin"
+	        android:layout_width="120dp"
+	        android:layout_height="120dp"
+	        android:src="@drawable/administrator"
+	        android:background="#EEEEEE" />
+	    <TextView 
+	        android:id="@+id/txt"
+	        android:layout_width="wrap_content"
+	        android:padding="10dp"
+	        android:layout_height="wrap_content"
+	        android:textColor="#37474F"
+	        android:textSize="16dp"
+	        android:textStyle="bold"
+	        android:text="Quản trị admin"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:orientation="vertical">
+	    
+	    <ImageButton
+	        android:id="@+id/btnquanlychitieu"
+	        android:layout_width="120dp"
+	        android:layout_height="120dp"
+	        android:src="@drawable/bgquanlychitieu"
+	        android:background="#EEEEEE" />
+	    <TextView 
+	        android:id="@+id/txt1"
+	        android:layout_width="wrap_content"
+	        android:padding="10dp"
+	        android:layout_height="wrap_content"
+	        android:textColor="#37474F"
+	        android:textSize="16dp"
+	        android:textStyle="bold"
+	        android:text="Quản lý chi tiêu"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:orientation="vertical">
+	    <ImageButton
+	        android:id="@+id/btngiacathitruong"
+	        android:layout_width="120dp"
+	        android:layout_height="120dp"
+	        android:src="@drawable/bgtintuc"
+	        android:background="#EEEEEE" />
+	    <TextView 
+	        android:id="@+id/txt2"
+	        android:layout_width="wrap_content"
+	        android:padding="10dp"
+	        android:layout_height="wrap_content"
+	        android:textColor="#37474F"
+	        android:textSize="16dp"
+	        android:textStyle="bold"
+	        android:text="Thông tin ngoại tệ và giá cả thị trường"/>
+	</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

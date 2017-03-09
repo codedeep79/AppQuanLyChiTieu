@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_listview_quantri"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+	        android:id="@+id/txtUserName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:textStyle="bold"
+	        android:textSize="16dp"
+	        android:textColor="#ffffff"
+	        android:text="Tên user" />
+        <TextView
+	        android:id="@+id/txtPass"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:textStyle="bold"
+	        android:textSize="16dp"
+	        android:layout_marginLeft="50dp"
+	        android:textColor="#ffffff"
+	        android:text="Password" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+	        android:id="@+id/txtLastName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:textStyle="bold"
+	        android:textSize="16dp"
+	        android:textColor="#ffffff"
+	        android:text="Last name " />
+        <TextView
+	        android:id="@+id/txtFirstName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:textStyle="bold"
+	        android:textSize="16dp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="50dp"
+	        android:text="First name" />
+    </LinearLayout>
+        <TextView
+	        android:id="@+id/txtAddress"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:textStyle="bold"
+	        android:textSize="16dp"
+	        android:textColor="#ffffff"
+	        android:text="Address" />
+    
+        <TextView
+	        android:id="@+id/txtPhone"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:textStyle="bold"
+	        android:textSize="16dp"
+	        android:textColor="#ffffff"
+	        android:text="Phone" />
+    
+
+</LinearLayout>

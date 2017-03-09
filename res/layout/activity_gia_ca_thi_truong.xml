@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TabHost 
+        android:id="@+id/myTabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TabWidget 
+                android:id="@android:id/tabs"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TabWidget>
+            <FrameLayout 
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout 
+                    android:orientation="vertical"
+                    android:id="@+id/giacathitruong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+					<WebView 
+					    android:id="@+id/thongTinGiaCa"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					     android:background="#B2DFDB"/>
+                </LinearLayout>
+                
+                <LinearLayout 
+                    android:orientation="vertical"
+                    android:id="@+id/tuvantintuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    	<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+	                        <TextView 
+						        android:id="@+id/txtTitle"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:padding="10dp"
+						        android:textColor="#FAFAFA"
+						        android:textStyle="bold|italic"
+						        android:textSize="16dp"
+						        android:background="#BCAAA4"
+						        android:text="THỜI SỰ VÀ TIN TỨC"/>
+						    <TextView 
+						        android:id="@+id/txtLoading"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:padding="10dp"
+						        android:textColor="@android:color/black"
+						        android:textStyle="italic"/>
+                            <ListView 
+                                android:id="@+id/listNews"
+                                android:layout_width="match_parent"
+                                android:background="#fff"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+                </LinearLayout>
+                
+                <LinearLayout 
+                    android:orientation="vertical"
+                    android:id="@+id/chuyendoingoaite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <WebView 
+					    android:id="@+id/ngoaiTe"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:background="#B2DFDB"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E8EAF6"
+    android:padding="10dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:textStyle="bold|italic"
+		android:textSize="16dp"
+		android:gravity="center_horizontal"
+		android:background="#2196F3"
+		android:textColor="#FFFFFF"
+        android:text="THÔNG TIN USER" />
+	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:textStyle="bold|italic"
+		android:textSize="16dp"
+        android:text="Lưu ý: Để cập nhật hoặc xóa bạn vui lòng nhấn giữ vào ô cần thực hiện. Click vào để xxem chi tiết." />
+	<ListView 
+	    android:id="@+id/listUser"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"/>
+</LinearLayout>

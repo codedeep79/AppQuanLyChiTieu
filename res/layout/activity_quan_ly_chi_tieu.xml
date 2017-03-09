@@ -1,0 +1,226 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<TabHost 
+	    android:id="@+id/myTabhost"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <LinearLayout 
+	        android:orientation="vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+	        <TabWidget 
+	            android:id="@android:id/tabs"
+	            android:layout_width="match_parent"
+	            android:background="#E0E0E0"
+	            android:layout_height="wrap_content">
+	        </TabWidget>
+	        <FrameLayout 
+	            android:id="@android:id/tabcontent"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent">
+	            <LinearLayout 
+	                android:orientation="vertical"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:padding="10dp"
+	                android:background="#F5F5F5"
+	                android:id="@+id/thuchi">
+	                <ScrollView
+	                       android:id="@+id/scroll"
+	                       android:layout_width="match_parent"
+	                       android:layout_height="match_parent"
+	                       android:background="#F5F5F5" >
+	                       <LinearLayout
+	                           android:layout_width="match_parent"
+	                           android:layout_height="match_parent"
+	                           android:orientation="vertical" >
+	                      		<HorizontalScrollView
+			                       android:id="@+id/scrollQuanLyChiTieu"
+			                       android:layout_width="match_parent"
+			                       android:layout_height="match_parent"
+			                       
+			                       android:background="#F5F5F5" >
+			                       <LinearLayout
+			                           android:layout_width="match_parent"
+			                           android:layout_height="match_parent"
+			                           android:orientation="vertical" >
+			                      
+				                 		<TableLayout 
+						                   android:layout_width="match_parent"
+						                   android:layout_height="wrap_content"
+						                   android:background="#fff"
+						                   android:padding="5dp">
+				
+						                   <TableRow>
+					
+						                       <Button
+						                           android:layout_width="wrap_content"
+						                           android:layout_height="100dp"
+						                           android:gravity="center"
+						                           android:textSize="20dp"
+						                           android:textStyle="bold"
+						                           android:textColor="#F0F8FD"
+						                           android:background="@drawable/custom_button"
+						                           android:src="@drawable/add"
+						                           android:id="@+id/btnthemgiaodich"
+						                           android:layout_marginRight="10dp"
+						                           android:layout_marginBottom="10dp"
+						                           android:text="THÊM GIAO DỊCH"/>
+						                       <Button 
+						                           android:layout_width="wrap_content"
+						                           android:layout_height="100dp"
+						                           android:gravity="center"
+						                           android:textSize="20dp"
+						                           android:textStyle="bold"
+						                           android:textColor="#F0F8FD"
+						                           android:background="@drawable/custom_button"
+						                           android:layout_marginRight="10dp"
+						                           android:layout_marginBottom="10dp"
+						                           android:id="@+id/btnhomnay"
+						                           android:text="HÔM NAY"/>
+						                   </TableRow>
+					                   
+						                   <TableRow >
+						                       <Button 
+						                           android:layout_width="wrap_content"
+						                           android:layout_height="100dp"
+						                           android:gravity="center"
+						                           android:textSize="20dp"
+						                           android:textStyle="bold"
+						                           android:textColor="#F0F8FD"
+						                           android:background="@drawable/custom_button"
+						                           android:layout_marginRight="10dp"
+						                           android:layout_marginBottom="10dp"
+						                           android:id="@+id/btnTuan"
+						                           android:text="TUẦN NÀY"/>
+						                       <Button 
+						                           android:layout_width="wrap_content"
+						                           android:layout_height="100dp"
+						                           android:gravity="center"
+						                           android:textSize="20dp"
+						                           android:textStyle="bold"
+						                           android:textColor="#F0F8FD"
+						                           android:background="@drawable/custom_button"
+						                           android:layout_marginRight="10dp"
+						                           android:layout_marginBottom="10dp"
+						                           android:id="@+id/btnThang"
+						                           android:text="THÁNG NÀY"/>
+						                   </TableRow>
+					                   
+						                   <TableRow>
+						                       <Button 
+						                           android:layout_width="100dp"
+						                           android:layout_height="100dp"
+						                           android:gravity="center"
+						                           android:textSize="20dp"
+						                           android:textStyle="bold"
+												   android:textColor="#F0F8FD"
+						                           android:background="@drawable/custom_button" 
+						                           android:layout_marginRight="10dp" 
+						                           android:layout_marginBottom="10dp"                        
+						                           android:id="@+id/btnNam"
+						                           android:text="NĂM NÀY"/>
+						                       <Button 
+						                           android:layout_width="wrap_content"
+						                           android:layout_height="100dp"
+						                           android:gravity="center"
+						                           android:textSize="20dp"
+						                           android:textStyle="bold"
+						                           android:textColor="#F0F8FD"
+						                           android:background="@drawable/custom_button"
+						                           android:layout_marginRight="10dp"
+						                           android:layout_marginBottom="10dp"
+						                           android:id="@+id/btnDeNghi"
+						                           android:text="ĐỀ NGHỊ CHI TIÊU"/>
+						                   </TableRow>
+						                   <TableRow>
+						                       <LinearLayout 
+							                      android:orientation="horizontal"
+							                      android:layout_width="match_parent"
+							                      android:layout_height="wrap_content"
+							                      android:gravity="center"
+							                      android:padding="10dp"
+							                      android:background="#fff">
+				                 	     
+							                      <ImageView
+									                   android:id="@+id/imgSoDu"
+									                   android:layout_width="wrap_content"
+									                   android:layout_height="wrap_content"
+									                   android:src="@drawable/sodu" />
+							                      <TextView 
+							                 	       android:id="@+id/txtTitleSoDu"
+								                 	   android:layout_width="300dp"
+								                 	   android:layout_height="wrap_content"
+								                 	   android:text=" Số dư"/>
+		
+		
+							                      <TextView 
+							                          android:id="@+id/txtSoDu"
+								                	  android:layout_width="match_parent"
+								                 	  android:layout_height="wrap_content"
+							                 	      android:text="0.0"/>
+				                 	 			</LinearLayout>
+						                   </TableRow>
+				                 	 </TableLayout>
+				                 	 
+				                 	 <ListView 
+				                 	     android:id="@+id/listTypeMoney"
+				                 	     android:layout_width="match_parent"
+				                 	     android:layout_height="300dp"
+				                 	     android:layout_marginTop="20dp"/>
+			                 	 </LinearLayout>
+	              			 </HorizontalScrollView>
+		                 		
+	                 	 </LinearLayout>
+	               </ScrollView>
+	               
+	            </LinearLayout>
+	            
+	            <RelativeLayout 
+	                android:id="@+id/caidat"
+	                android:background="#FAFAFA"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent">
+	                <Spinner 
+	                 	android:id="@+id/caidatSpinner"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="#F5F5F5"
+	                    android:padding="10dp"
+	                    android:layout_marginTop="10dp"/>
+	                
+	                <ListView 
+	                    android:id="@+id/listCaiDat"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="600dp"
+	                    android:layout_below="@+id/caidatSpinner"
+	                    android:background="#ffffff"/>
+	                <TableLayout 
+	                    android:id="@+id/layoutThemCaiDat"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+						android:stretchColumns="0"
+						android:layout_alignParentBottom="true"
+	                    android:layout_gravity="bottom">
+	                       	<TableRow 
+	                       		android:layout_width="match_parent"
+	                    		android:layout_height="wrap_content">
+	                       	    <EditText 
+			                        android:id="@+id/edtThemCaiDat"
+			                        android:layout_width="match_parent"
+			                        android:layout_height="50dp"
+			                        android:hint="Thêm phân nhóm hoặc tài khoản"/>
+			                    <Button 
+			                        android:id="@+id/btnThemCaiDat"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="50dp"
+			                        android:text="Thêm"/>  
+	                    	</TableRow>
+	                </TableLayout>
+	            </RelativeLayout>
+	        </FrameLayout>
+	    </LinearLayout>
+	</TabHost>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView 
+                    android:id="@+id/txt1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="Tài khoản"/>
+                 <Spinner 
+			        android:id="@+id/account"
+			        android:layout_width="match_parent"
+			        android:layout_height="45dp"
+			        android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                 <TextView 
+                    android:id="@+id/txt2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="Phân nhóm"/>
+                 <Spinner 
+			        android:id="@+id/group"
+			        android:layout_width="match_parent"
+			        android:layout_height="45dp"
+			        android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                 <TextView 
+                    android:id="@+id/txt3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="Loại giao dịch"/>
+                 <Spinner 
+			        android:id="@+id/typeTransition"
+			        android:layout_width="match_parent"
+			        android:layout_height="45dp"
+			        android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+		    
+		    <EditText 
+		        android:id="@+id/edtMoney"
+		        android:layout_width="match_parent"
+		        android:hint="Lượng tiền"
+		        android:layout_height="45dp"/>
+		    <EditText 
+		        android:id="@+id/edtTransitionFuture"
+		        android:layout_width="match_parent"
+		        android:layout_height="45dp"
+		        android:hint="Transition future if you have.."/>
+		   	<LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                 <Spinner 
+		        	android:id="@+id/stateTransition"
+			        android:layout_width="match_parent"
+			        android:layout_height="45dp"
+			        android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+
+		        <TextView
+		            android:id="@+id/txtTime"
+		            android:layout_width="142dp"
+		            android:gravity="center"
+		            android:layout_height="match_parent" />
+
+		        <Button
+		            android:id="@+id/btnDay"
+		            android:layout_width="match_parent"
+		            android:layout_height="50dp"
+		            android:layout_marginRight="100dp"
+		            android:layout_weight="1.67"
+		            android:gravity="center"
+		            android:text="Choose time" />
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        <Button 
+		            android:id="@+id/btnSave"
+		            android:layout_width="100dp"
+		            android:layout_height="50dp"
+		            android:text="Save"
+		            android:layout_marginRight="100dp"/>
+		        <Button 
+		            android:id="@+id/btnCancel"
+		            android:layout_width="100dp"
+		            android:text="Cancel"
+		            android:layout_height="50dp"/>
+		    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

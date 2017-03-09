@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+ 	<item
+ 	    android:id="@+id/update"
+        android:orderInCategory="0"
+        android:title="Cập nhật giao dịch"/>
+ 	
+ 	<item
+ 	    android:id="@+id/delete"
+        android:orderInCategory="0"
+        android:title="Xóa giao dịch"/>
+ 	    
+
+</menu>
